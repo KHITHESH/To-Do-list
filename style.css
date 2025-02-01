@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#fff;
+    --secondary-color:#000;
+}
+.dark_theme{
+    --primary-color:#000;
+    --secondary-color:#fff;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--secondary-color);
+}
+.container{
+    height: 400px;
+    width: 600px;
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--primary-color),
+                0 0 15px var(--primary-color);
+}
+.container .form{
+    height: 30%;
+    width: 100%;
+    border-bottom: 2px solid var(--primary-color);
+}
+.container .form form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container .form form input{
+    height: 30px;
+    width: 130px;
+    background: var(--secondary-color);
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid var(--primary-color);
+    padding: 10px;
+    outline: none;
+    color:var(--primary-color)
+}
+.container .form form input::placeholder{
+    color: var(--primary-color);
+}
+.container .form form button{
+    height: 30px;
+    width: 130px;
+    background: var(--secondary-color);
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid var(--primary-color);
+    padding: 10px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.container .form form button:hover{
+    transform: scale(1.1);
+}
+.container .table{
+    height: 70%;
+    width: 100%;
+}
+.container .table table{
+    height: 40px;
+    width: 100%;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.container .table table tr{
+    height: 25px;
+}
+.container .table table td{
+    width: 33%;
+    height: 100%;
+}
+
+.container .table table button{
+    height: 80%;
+    padding: 0;
+    width: 30%;
+    margin-left: 10px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
